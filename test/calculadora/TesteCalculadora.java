@@ -1,27 +1,55 @@
 package calculadora;
 
+/**
+ * Classe de testes da {@link Calculadora}.
+ *
+ * <p>Cada teste exibe a <strong>entrada utilizada</strong>, o
+ * <strong>resultado esperado</strong> e o <strong>resultado obtido</strong>.
+ * Os casos de erro (divisão por zero e operador inválido) verificam se a
+ * exceção {@link IllegalArgumentException} é lançada e tratada sem
+ * interromper a execução do programa.</p>
+ *
+ * @author Nome do Aluno
+ * @version 1.0
+ */
 public class TesteCalculadora {
 
+    /**
+     * Executa todos os testes de soma, subtração, multiplicação, divisão,
+     * divisão por zero e operação inválida.
+     *
+     * @param args argumentos de linha de comando (não utilizados)
+     */
     public static void main(String[] args) {
         Calculadora calc = new Calculadora();
 
-        // Testes rápidos
+        // Operações válidas: imprime o resultado obtido
         System.out.println("Entrada: 2 + 3   | esperado: 5");
-        calc.calc(2, 3, "+");  // esperado: 5
+        System.out.println("Obtido: " + calc.calcular(2, 3, "+"));
 
         System.out.println("Entrada: 10 - 4  | esperado: 6");
-        calc.calc(10, 4, "-"); // esperado: 6
+        System.out.println("Obtido: " + calc.calcular(10, 4, "-"));
 
         System.out.println("Entrada: 3 * 5   | esperado: 15");
-        calc.calc(3, 5, "*");  // esperado: 15
+        System.out.println("Obtido: " + calc.calcular(3, 5, "*"));
 
         System.out.println("Entrada: 8 / 2   | esperado: 4");
-        calc.calc(8, 2, "/");  // esperado: 4
+        System.out.println("Obtido: " + calc.calcular(8, 2, "/"));
 
-        System.out.println("Entrada: 8 / 0   | esperado: mensagem de divisao por zero e resultado 0");
-        calc.calc(8, 0, "/");  // divisao por zero
+        // Divisão por zero: deve lançar exceção, tratada pelo catch
+        System.out.println("Entrada: 8 / 0   | esperado: exceção 'Divisão por zero não é permitida.'");
+        try {
+            System.out.println("Obtido: " + calc.calcular(8, 0, "/")); // exceção
+        } catch (IllegalArgumentException e) {
+            System.out.println("Obtido: " + e.getMessage());
+        }
 
-        System.out.println("Entrada: 5 x 5   | esperado: mensagem de operacao invalida e resultado 0");
-        calc.calc(5, 5, "x");  // operação inválida
+        // Operação inválida: deve lançar exceção, tratada pelo catch
+        System.out.println("Entrada: 5 x 5   | esperado: exceção 'Operador inválido: x'");
+        try {
+            System.out.println("Obtido: " + calc.calcular(5, 5, "x")); // exceção
+        } catch (IllegalArgumentException e) {
+            System.out.println("Obtido: " + e.getMessage());
+        }
     }
 }
