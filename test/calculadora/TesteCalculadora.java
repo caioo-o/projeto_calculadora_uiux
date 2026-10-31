@@ -9,7 +9,7 @@ package calculadora;
  * exceção {@link IllegalArgumentException} é lançada e tratada sem
  * interromper a execução do programa.</p>
  *
- * @author Nome do Aluno
+ * @author Caio Sbardelotto de Oliveira RA: 251766
  * @version 1.0
  */
 public class TesteCalculadora {

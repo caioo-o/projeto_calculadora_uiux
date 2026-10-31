@@ -17,7 +17,7 @@ package calculadora;
  * <p>Após a refatoração, os métodos desta classe são <strong>métodos puros</strong>,
  * sem efeitos colaterais, permitindo maior legibilidade e facilitando testes unitários.</p>
  *
- * @author Nome do Aluno
+ * @author Caio Sbardelotto de Oliveira RA: 251766
  * @version 1.0
  */
 public class Calculadora {
