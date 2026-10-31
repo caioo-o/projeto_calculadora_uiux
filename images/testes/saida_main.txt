@@ -1,0 +1,14 @@
+Entrada: 2 + 3   | esperado: 5
+Resultado = 5
+Entrada: 10 - 4  | esperado: 6
+Resultado = 6
+Entrada: 3 * 5   | esperado: 15
+Resultado = 15
+Entrada: 8 / 2   | esperado: 4
+Resultado = 4
+Entrada: 8 / 0   | esperado: mensagem de divisao por zero e resultado 0
+Erro: divisao por zero, operação irregular
+Resultado = 0
+Entrada: 5 x 5   | esperado: mensagem de operacao invalida e resultado 0
+Operacao invalida
+Resultado = 0
