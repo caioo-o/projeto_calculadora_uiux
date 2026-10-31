@@ -8,9 +8,9 @@
 
 **Projeto:** Projeto Calculadora  
 **Contexto:** FinançApp  
-**Aluno:** Nome do aluno *(preencher)*  
-**RA:** XXXXXXX *(preencher)*  
-**Curso:** Nome do curso *(preencher)*  
+**Aluno:** Caio Sbardelotto de Oliveira 
+**RA:** 251766  
+**Curso:** Análise e desenvolvimento de Sistemas  
 **Disciplina:** UX/UI e Testes de Software (AS406TSN1)  
 **Professor:** Daniel Ohata  
 **Semestre:** 2026.2  
@@ -259,4 +259,4 @@ Histórico de commits organizado por etapa (estrutura → implementação → te
 
 # 14. Link do Repositório
 
-https://github.com/SEU-USUARIO/projeto_calculadora *(substituir pelo link do seu repositório)*
+https://github.com/caioo-o/projeto_calculadora_uiux.git 
